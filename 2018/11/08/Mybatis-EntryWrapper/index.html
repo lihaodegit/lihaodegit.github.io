@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="Mybatis-EntityWrapper," />
 
 
 
@@ -79,16 +79,18 @@
 
 
 
-<meta name="description" content="赚卖白菜的钱，操卖白粉的心">
-<meta property="og:type" content="website">
-<meta property="og:title" content="驴哥爱冰月的博客">
-<meta property="og:url" content="https://lvgeaibingyue.com/categories/java/index.html">
+<meta name="description" content="使用T selectOne(Wrapper wrapper);我们只需要传递入我们创建一个EntityWrapper()并将条件拼接好就可以。例如new EntityWrapper().eq(“id”,”1”)就是查询id等于1的这条数据。这里不仅仅支持eq(),还有like,not like ,group by等，差不多在SQL中需要的这里都有,可以自己慢慢发掘  上代码  List&amp;lt;Ap">
+<meta name="keywords" content="Mybatis-EntityWrapper">
+<meta property="og:type" content="article">
+<meta property="og:title" content="mybatis-plus 使用工具  EntityWrapper">
+<meta property="og:url" content="https://lvgeaibingyue.com/2018/11/08/Mybatis-EntryWrapper/index.html">
 <meta property="og:site_name" content="驴哥爱冰月的博客">
-<meta property="og:description" content="赚卖白菜的钱，操卖白粉的心">
+<meta property="og:description" content="使用T selectOne(Wrapper wrapper);我们只需要传递入我们创建一个EntityWrapper()并将条件拼接好就可以。例如new EntityWrapper().eq(“id”,”1”)就是查询id等于1的这条数据。这里不仅仅支持eq(),还有like,not like ,group by等，差不多在SQL中需要的这里都有,可以自己慢慢发掘  上代码  List&amp;lt;Ap">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-11-08T14:00:25.123Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="驴哥爱冰月的博客">
-<meta name="twitter:description" content="赚卖白菜的钱，操卖白粉的心">
+<meta name="twitter:title" content="mybatis-plus 使用工具  EntityWrapper">
+<meta name="twitter:description" content="使用T selectOne(Wrapper wrapper);我们只需要传递入我们创建一个EntityWrapper()并将条件拼接好就可以。例如new EntityWrapper().eq(“id”,”1”)就是查询id等于1的这条数据。这里不仅仅支持eq(),还有like,not like ,group by等，差不多在SQL中需要的这里都有,可以自己慢慢发掘  上代码  List&amp;lt;Ap">
 
 
 
@@ -118,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="https://lvgeaibingyue.com/categories/java/"/>
+  <link rel="canonical" href="https://lvgeaibingyue.com/2018/11/08/Mybatis-EntryWrapper/"/>
 
 
 
 
 
-  <title>分类: java | 驴哥爱冰月的博客</title>
+  <title>mybatis-plus 使用工具  EntityWrapper | 驴哥爱冰月的博客</title>
   
 
 
@@ -143,7 +145,7 @@
     
   
 
-  <div class="container sidebar-position-left ">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 	<a href="https://lihaodegit.github.io">
 		<img style="position: absolute; top: 0; left: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_left_darkblue_121621.png" alt="Fork me on GitHub">
@@ -283,111 +285,282 @@
           <div id="content" class="content">
             
 
+  <div id="posts" class="posts-expand">
+    
+
+  
+
   
   
   
-  <div class="post-block category">
-
-    <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        <h1>java<small>分类</small>
-        </h1>
-      </div>
-
-      
-        
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://lvgeaibingyue.com/2018/11/08/Mybatis-EntryWrapper/">
 
-      <h2 class="post-title">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="驴哥">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/1.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="驴哥爱冰月的博客">
+    </span>
+
+    
+      <header class="post-header">
+
         
-            <a class="post-title-link" href="/2018/11/08/Mybatis-EntryWrapper/" itemprop="url">
-              
-                <span itemprop="name">mybatis-plus 使用工具  EntityWrapper</span>
-              
-            </a>
         
-      </h2>
+          <h1 class="post-title" itemprop="name headline">mybatis-plus 使用工具  EntityWrapper</h1>
+        
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-11-08T21:58:26+08:00"
-              content="2018-11-08" >
-          11-08
-        </time>
-      </div>
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-11-08T21:58:26+08:00">
+                2018-11-08
+              </time>
+            
 
-    </header>
-  </article>
+            
 
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/java/" itemprop="url" rel="index">
+                    <span itemprop="name">java</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  137
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  1
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2018/11/08/for-map/" itemprop="url">
-              
-                <span itemprop="name">遍历Map的四种方法</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-11-08T21:42:31+08:00"
-              content="2018-11-08" >
-          11-08
-        </time>
-      </div>
-
-    </header>
-  </article>
-
+      
 
       
-        
+        <p><strong>使用T selectOne(Wrapper<t> wrapper);我们只需要传递入我们创建一个EntityWrapper()并将条件拼接好就可以。例如new EntityWrapper().eq(“id”,”1”)就是查询id等于1的这条数据。这里不仅仅支持eq(),还有like,not like ,group by等，差不多在SQL中需要的这里都有,可以自己慢慢发掘</t></strong></p>
+<hr>
+<p>上代码</p>
+<pre><code> List&lt;ApplyEntity&gt; list = devApplyService.selectList(new EntityWrapper&lt;ApplyEntity&gt;()
+            .eq(&quot;code&quot;,code).eq(&quot;status&quot;,status).eq(&quot;orgid&quot;,orgid).isNotNull(&quot;auditresult&quot;));
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2018/11/07/base64/" itemprop="url">
-              
-                <span itemprop="name">base64和图片的互相转换</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-11-07T21:06:52+08:00"
-              content="2018-11-07" >
-          11-07
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
+Entity entity=sysDdService.selectOne(new EntityWrapper&lt;SysDdtEntity&gt;().eq(&quot;dict_type&quot;, &quot;CAR_AREA&quot;));
+</code></pre>
       
     </div>
+    
+    
+    
+	<div>
+		
+			<div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">-------------本文结束<i class="fa fa-paw"></i>感谢您的阅读-------------</div>
+    
+</div>
 
+		
+	</div>
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>坚持原创技术分享，您的支持将鼓励我继续创作</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/wx.png" alt="驴哥 微信支付"/>
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/images/zfb.png" alt="驴哥 支付宝"/>
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Mybatis-EntityWrapper/" rel="tag"><i class="fa fa-tag"></i> Mybatis-EntityWrapper</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/11/08/for-map/" rel="next" title="遍历Map的四种方法">
+                <i class="fa fa-chevron-left"></i> 遍历Map的四种方法
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
 
+
+    <div class="post-spread">
+      
+        
+  <div class="bdsharebuttonbox">
+    <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+    <a href="#" class="bds_douban" data-cmd="douban" title="分享到豆瓣网"></a>
+    <a href="#" class="bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a>
+    <a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+    <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+    <a href="#" class="bds_tieba" data-cmd="tieba" title="分享到百度贴吧"></a>
+    <a href="#" class="bds_twi" data-cmd="twi" title="分享到Twitter"></a>
+    <a href="#" class="bds_fbook" data-cmd="fbook" title="分享到Facebook"></a>
+    <a href="#" class="bds_more" data-cmd="more"></a>
+    <a class="bds_count" data-cmd="count"></a>
+  </div>
+  <script>
+    window._bd_share_config = {
+      "common": {
+        "bdText": "",
+        "bdMini": "2",
+        "bdMiniList": false,
+        "bdPic": ""
+      },
+      "share": {
+        "bdSize": "16",
+        "bdStyle": "0"
+      },
+      "image": {
+        "viewList": ["tsina", "douban", "sqq", "qzone", "weixin", "twi", "fbook"],
+        "viewText": "分享到：",
+        "viewSize": "16"
+      }
+    }
+  </script>
+
+<script>
+  with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='//bdimg.share.baidu.com/static/api/js/share.js?cdnversion='+~(-new Date()/36e5)];
+</script>
+
+      
+    </div>
+  </div>
 
 
           </div>
@@ -395,6 +568,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -633,6 +810,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 

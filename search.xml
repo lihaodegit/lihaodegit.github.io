@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[win10专业版激活办法]]></title>
     <url>%2F2018%2F11%2F14%2Fwin10%E4%B8%93%E4%B8%9A%E7%89%88%E6%BF%80%E6%B4%BB%E5%8A%9E%E6%B3%95%2F</url>
-    <content type="text"><![CDATA[2018win10专业版激活方法1、windows+x ==》选择命令提示符（管理员） 2、 在命令提示符中依次输入：slmgr.vbs /upk （此时弹出窗口显未“已成功卸载了产品密钥”） slmgr /ipk W269N-WFGWX-YVC9B-4J6C9-T83GX （弹出窗口提示：“成功的安装了产品密钥”） slmgr /skms zh.us.to （弹出窗口提示：“密钥管理服务计算机名成功的设置为 zh.us.to”） slmgr /ato （弹出窗口提示：“成功的激活了产品”） ###3、查看激活时间### 以上步骤即激活了win10系统了，如果需要查看一下此密钥的激活天数，可以输入以下命令：slmgr /xpr，回车键后，将弹出窗口，提示”批量激活的过期时间”。 当此激活操作过期后，我们只需要重新激活一次，即可再享受180天激活机会。附参照地址：http://www.ylmfwin100.com/ylmf/8643.html]]></content>
+    <content type="text"><![CDATA[2018win10专业版激活方法1、windows+x ==》选择命令提示符（管理员） 2、 在命令提示符中依次输入：slmgr.vbs /upk （此时弹出窗口显未“已成功卸载了产品密钥”） slmgr /ipk W269N-WFGWX-YVC9B-4J6C9-T83GX （弹出窗口提示：“成功的安装了产品密钥”） slmgr /skms zh.us.to （弹出窗口提示：“密钥管理服务计算机名成功的设置为 zh.us.to”） slmgr /ato （弹出窗口提示：“成功的激活了产品”） 3、查看激活时间：以上步骤即激活了win10系统了，如果需要查看一下此密钥的激活天数，可以输入以下命令：slmgr /xpr，回车键后，将弹出窗口，提示”批量激活的过期时间”。 当此激活操作过期后，我们只需要重新激活一次，即可再享受180天激活机会。 附参照地址：http://www.ylmfwin100.com/ylmf/8643.html]]></content>
       <categories>
         <category>win10</category>
       </categories>

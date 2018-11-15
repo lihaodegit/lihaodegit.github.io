@@ -90,7 +90,7 @@
 
 
 
-  <meta name="keywords" content="Map遍历," />
+  <meta name="keywords" content="文件转换," />
 
 
 
@@ -101,18 +101,23 @@
 
 
 
-<meta name="description" content="import java.util.HashMap; import java.util.Iterator; import java.util.Map;  public class TestMap {     public static void main(String[] args) {         Map&amp;lt;Integer, String&amp;gt; map = new HashMap&amp;lt;">
-<meta name="keywords" content="Map遍历">
+<meta name="description" content="今天项目要求做个word、excel转pdf的功能，百般搜刮，测试，终于完成下面这个是word、excel、ppt转pdf功能，支持doc、docx、xls、xlsx、ppt、pptx转pdf1、 准备工作：windows环境、maven项目，普通项目也可以下载jacob.zip，地址：https://sourceforge.net/projects/jacob-project/">
+<meta name="keywords" content="文件转换">
 <meta property="og:type" content="article">
-<meta property="og:title" content="遍历Map的四种方法">
-<meta property="og:url" content="https://lvgeaibingyue.com/2018/11/08/for-map/index.html">
+<meta property="og:title" content="word、excel、ppt转PDF文件">
+<meta property="og:url" content="https://lvgeaibingyue.com/2018/11/15/文件转换/index.html">
 <meta property="og:site_name" content="驴哥爱冰月的博客">
-<meta property="og:description" content="import java.util.HashMap; import java.util.Iterator; import java.util.Map;  public class TestMap {     public static void main(String[] args) {         Map&amp;lt;Integer, String&amp;gt; map = new HashMap&amp;lt;">
+<meta property="og:description" content="今天项目要求做个word、excel转pdf的功能，百般搜刮，测试，终于完成下面这个是word、excel、ppt转pdf功能，支持doc、docx、xls、xlsx、ppt、pptx转pdf1、 准备工作：windows环境、maven项目，普通项目也可以下载jacob.zip，地址：https://sourceforge.net/projects/jacob-project/">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-11-12T13:38:22.407Z">
+<meta property="og:image" content="https://i.imgur.com/lO6d566.png">
+<meta property="og:image" content="https://i.imgur.com/Xk6iQhS.png">
+<meta property="og:image" content="https://i.imgur.com/AslwEBJ.png">
+<meta property="og:image" content="https://i.imgur.com/Mz4BHh0.png">
+<meta property="og:updated_time" content="2018-11-15T12:44:07.732Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="遍历Map的四种方法">
-<meta name="twitter:description" content="import java.util.HashMap; import java.util.Iterator; import java.util.Map;  public class TestMap {     public static void main(String[] args) {         Map&amp;lt;Integer, String&amp;gt; map = new HashMap&amp;lt;">
+<meta name="twitter:title" content="word、excel、ppt转PDF文件">
+<meta name="twitter:description" content="今天项目要求做个word、excel转pdf的功能，百般搜刮，测试，终于完成下面这个是word、excel、ppt转pdf功能，支持doc、docx、xls、xlsx、ppt、pptx转pdf1、 准备工作：windows环境、maven项目，普通项目也可以下载jacob.zip，地址：https://sourceforge.net/projects/jacob-project/">
+<meta name="twitter:image" content="https://i.imgur.com/lO6d566.png">
 
 
 
@@ -142,13 +147,13 @@
 
 
 
-  <link rel="canonical" href="https://lvgeaibingyue.com/2018/11/08/for-map/"/>
+  <link rel="canonical" href="https://lvgeaibingyue.com/2018/11/15/文件转换/"/>
 
 
 
 
 
-  <title>遍历Map的四种方法 | 驴哥爱冰月的博客</title>
+  <title>word、excel、ppt转PDF文件 | 驴哥爱冰月的博客</title>
   
 
 
@@ -321,7 +326,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://lvgeaibingyue.com/2018/11/08/for-map/">
+    <link itemprop="mainEntityOfPage" href="https://lvgeaibingyue.com/2018/11/15/文件转换/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="驴哥">
@@ -338,7 +343,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">遍历Map的四种方法</h1>
+          <h1 class="post-title" itemprop="name headline">word、excel、ppt转PDF文件</h1>
         
 
         <div class="post-meta">
@@ -350,8 +355,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-11-08T21:42:31+08:00">
-                2018-11-08
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-11-15T20:37:54+08:00">
+                2018-11-15
               </time>
             
 
@@ -373,8 +378,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/java/" itemprop="url" rel="index">
-                    <span itemprop="name">java</span>
+                  <a href="/categories/文件转换/" itemprop="url" rel="index">
+                    <span itemprop="name">文件转换</span>
                   </a>
                 </span>
 
@@ -409,7 +414,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  326
+                  717
                 </span>
               
 
@@ -425,7 +430,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  1
+                  3
                 </span>
               
             </div>
@@ -446,51 +451,142 @@
       
 
       
-        <pre><code>import java.util.HashMap;
-import java.util.Iterator;
-import java.util.Map;
+        <h1 id="今天项目要求做个word、excel转pdf的功能，百般搜刮，测试，终于完成"><a href="#今天项目要求做个word、excel转pdf的功能，百般搜刮，测试，终于完成" class="headerlink" title="今天项目要求做个word、excel转pdf的功能，百般搜刮，测试，终于完成"></a>今天项目要求做个word、excel转pdf的功能，百般搜刮，测试，终于完成</h1><h3 id="下面这个是word、excel、ppt转pdf功能，支持doc、docx、xls、xlsx、ppt、pptx转pdf"><a href="#下面这个是word、excel、ppt转pdf功能，支持doc、docx、xls、xlsx、ppt、pptx转pdf" class="headerlink" title="下面这个是word、excel、ppt转pdf功能，支持doc、docx、xls、xlsx、ppt、pptx转pdf"></a>下面这个是word、excel、ppt转pdf功能，支持doc、docx、xls、xlsx、ppt、pptx转pdf</h3><h4 id="1、-准备工作：windows环境、maven项目，普通项目也可以"><a href="#1、-准备工作：windows环境、maven项目，普通项目也可以" class="headerlink" title="1、 准备工作：windows环境、maven项目，普通项目也可以"></a>1、 准备工作：windows环境、maven项目，普通项目也可以</h4><p>下载jacob.zip，地址：<a href="https://sourceforge.net/projects/jacob-project/" target="_blank" rel="noopener">https://sourceforge.net/projects/jacob-project/</a></p>
+<p><img src="https://i.imgur.com/lO6d566.png" alt=""><br><a id="more"></a></p>
+<h4 id="2、-点击-download-就行，下载解压后显示的是-jacob-1-19文件-这个样子"><a href="#2、-点击-download-就行，下载解压后显示的是-jacob-1-19文件-这个样子" class="headerlink" title="2、 点击  download  就行，下载解压后显示的是  jacob-1.19文件   这个样子"></a>2、 点击  download  就行，下载解压后显示的是  jacob-1.19文件   这个样子</h4><p><img src="https://i.imgur.com/Xk6iQhS.png" alt=""></p>
+<h4 id="3、-64位系统就用-x64的dll，32位系统就用x86的dll。将dll文件放入放入jdk-bin目录下-如下图所示："><a href="#3、-64位系统就用-x64的dll，32位系统就用x86的dll。将dll文件放入放入jdk-bin目录下-如下图所示：" class="headerlink" title="3、 64位系统就用 x64的dll，32位系统就用x86的dll。将dll文件放入放入jdk/bin目录下,如下图所示："></a>3、 64位系统就用 x64的dll，32位系统就用x86的dll。将dll文件放入放入jdk/bin目录下,如下图所示：</h4><p><img src="https://i.imgur.com/AslwEBJ.png" alt=""></p>
+<h4 id="4、-将压缩包中的jacob-jar引入项目"><a href="#4、-将压缩包中的jacob-jar引入项目" class="headerlink" title="4、 将压缩包中的jacob.jar引入项目"></a>4、 将压缩包中的jacob.jar引入项目</h4><p><img src="https://i.imgur.com/Mz4BHh0.png" alt=""><br>    <dependency><br>         <groupid>com.google.guava</groupid><br>         <artifactid>guava</artifactid><br>         <version>19.0</version><br>    </dependency></p>
+<pre><code>&lt;dependency&gt;
+    &lt;groupId&gt;com.jacob&lt;/groupId&gt;
+    &lt;artifactId&gt;jacob&lt;/artifactId&gt;
+    &lt;version&gt;1.18-M2&lt;/version&gt;
+    &lt;scope&gt;system&lt;/scope&gt;
+    &lt;systemPath&gt;D:\Maven\maven-repository\jacob\jacob.jar&lt;/systemPath&gt;
+&lt;/dependency&gt;
+</code></pre><h4 id="5、-展示代码"><a href="#5、-展示代码" class="headerlink" title="5、 展示代码"></a>5、 展示代码</h4><pre><code>import com.jacob.activeX.ActiveXComponent;
+import com.jacob.com.ComThread;
+import com.jacob.com.Dispatch;
+import com.jacob.com.Variant;
 
-public class TestMap {
-    public static void main(String[] args) {
-        Map&lt;Integer, String&gt; map = new HashMap&lt;Integer, String&gt;();
-        map.put(1, &quot;a&quot;);
-        map.put(2, &quot;b&quot;);
-        map.put(3, &quot;ab&quot;);
-        map.put(4, &quot;ab&quot;);// 和上面相同 ， 会自己筛选
-        System.out.println(map.size());
-        // 第一种：
-        System.out.println(&quot;第一种：通过Map.keySet遍历key和value：&quot;);
-        for (Integer in : map.keySet()) {
-            //map.keySet()返回的是所有key的值
-            String str = map.get(in);//得到每个key多对用value的值
-            System.out.println(in + &quot;     &quot; + str);
+public class Demo {
+private static final Integer WORD_TO_PDF_OPERAND = 17;
+private static final Integer PPT_TO_PDF_OPERAND = 32;
+private static final Integer EXCEL_TO_PDF_OPERAND = 0;
+
+public void docToPdf(String srcFilePath, String pdfFilePath) throws Exception {  
+    ActiveXComponent app = null;  
+    Dispatch doc = null;  
+    try {  
+        ComThread.InitSTA();  
+        app = new ActiveXComponent(&quot;Word.Application&quot;);  
+        app.setProperty(&quot;Visible&quot;, false);  
+        Dispatch docs = app.getProperty(&quot;Documents&quot;).toDispatch(); 
+        Object[] obj = new Object[]{
+                srcFilePath, 
+                new Variant(false),  
+                new Variant(false),//是否只读  
+                new Variant(false),   
+                new Variant(&quot;pwd&quot;)
+        };
+        doc = Dispatch.invoke(docs, &quot;Open&quot;, Dispatch.Method, obj, new int[1]).toDispatch();  
+//          Dispatch.put(doc, &quot;Compatibility&quot;, false);  //兼容性检查,为特定值false不正确  
+        Dispatch.put(doc, &quot;RemovePersonalInformation&quot;, false);  
+        Dispatch.call(doc, &quot;ExportAsFixedFormat&quot;, pdfFilePath, WORD_TO_PDF_OPERAND); // word保存为pdf格式宏，值为17  
+
+    }catch (Exception e) {  
+        e.printStackTrace();
+        throw e;
+    } finally {  
+        if (doc != null) {  
+            Dispatch.call(doc, &quot;Close&quot;, false);  
+        }  
+        if (app != null) {  
+            app.invoke(&quot;Quit&quot;, 0);  
+        }  
+        ComThread.Release();  
+    }  
+}  
+
+public void pptToPdf(String srcFilePath, String pdfFilePath) throws Exception {
+    ActiveXComponent app = null;
+    Dispatch ppt = null;
+    try {
+        ComThread.InitSTA();
+        app = new ActiveXComponent(&quot;PowerPoint.Application&quot;);
+        Dispatch ppts = app.getProperty(&quot;Presentations&quot;).toDispatch();
+
+            /*
+            * call 
+             * param 4: ReadOnly
+                 * param 5: Untitled指定文件是否有标题
+             * param 6: WithWindow指定文件是否可见
+             * */
+        ppt = Dispatch.call(ppts, &quot;Open&quot;, srcFilePath, true,true, false).toDispatch();
+        Dispatch.call(ppt, &quot;SaveAs&quot;, pdfFilePath, PPT_TO_PDF_OPERAND); // ppSaveAsPDF为特定值32
+
+    } catch (Exception e) {
+        e.printStackTrace();
+        throw e;
+    } finally {
+        if (ppt != null) {
+            Dispatch.call(ppt, &quot;Close&quot;);
         }
-</code></pre><a id="more"></a>
-<pre><code>        // 第二种：
-        System.out.println(&quot;第二种：通过Map.entrySet使用iterator遍历key和value：&quot;);
-        Iterator&lt;Map.Entry&lt;Integer, String&gt;&gt; it = map.entrySet().iterator();
-        while (it.hasNext()) {
-            Map.Entry&lt;Integer, String&gt; entry = it.next();
-            System.out.println(&quot;key= &quot; + entry.getKey() + &quot; and value= &quot; +             
-            entry.getValue());
+        if (app != null) {
+            app.invoke(&quot;Quit&quot;);
         }
-        // 第三种：推荐，尤其是容量大时
-        System.out.println(&quot;第三种：通过Map.entrySet遍历key和value&quot;);
-        for (Map.Entry&lt;Integer, String&gt; entry : map.entrySet()) {
-            //Map.entry&lt;Integer,String&gt; 映射项（键-值对）  有几个方法：用上面的名字entry
-            //entry.getKey() ;entry.getValue(); entry.setValue();
-            //map.entrySet()  返回此映射中包含的映射关系的 Set视图。
-            System.out.println(&quot;key= &quot; + entry.getKey() + &quot; and value= &quot;
-                    + entry.getValue());
-        }
-        // 第四种：
-        System.out.println(&quot;第四种：通过Map.values()遍历所有的value，但不能遍历key&quot;);
-        for (String v : map.values()) {
-            System.out.println(&quot;value= &quot; + v);
-        }
+        ComThread.Release();
     }
 }
-</code></pre>
+
+public void excelToPdf(String inFilePath, String outFilePath) throws Exception {
+    ActiveXComponent ax = null;
+    Dispatch excel = null;
+    try {
+        ComThread.InitSTA();
+        ax = new ActiveXComponent(&quot;Excel.Application&quot;);
+        ax.setProperty(&quot;Visible&quot;, new Variant(false));
+        ax.setProperty(&quot;AutomationSecurity&quot;, new Variant(3)); // 禁用宏
+        Dispatch excels = ax.getProperty(&quot;Workbooks&quot;).toDispatch();
+
+        Object[] obj = new Object[]{ 
+                inFilePath, 
+                new Variant(false),
+                new Variant(false) 
+         };
+        excel = Dispatch.invoke(excels, &quot;Open&quot;, Dispatch.Method, obj, new int[9]).toDispatch();
+
+        // 转换格式
+        Object[] obj2 = new Object[]{ 
+                new Variant(EXCEL_TO_PDF_OPERAND), // PDF格式=0
+                outFilePath, 
+                new Variant(0)  //0=标准 (生成的PDF图片不会变模糊) ; 1=最小文件
+        };
+        Dispatch.invoke(excel, &quot;ExportAsFixedFormat&quot;, Dispatch.Method,obj2, new int[1]);
+
+    } catch (Exception es) {
+        es.printStackTrace();
+        throw es;
+    } finally {
+        if (excel != null) {
+            Dispatch.call(excel, &quot;Close&quot;, new Variant(false));
+        }
+        if (ax != null) {
+            ax.invoke(&quot;Quit&quot;, new Variant[] {});
+            ax = null;
+        }
+        ComThread.Release();
+    }
+
+}
+
+public static void main(String[] args) throws Exception {
+    String path = &quot;C:\\Users\\lihao\\Desktop\\&quot;;
+    new Demo().docToPdf(path + &quot;实习报告.doc&quot;, path+ &quot;实习报告.pdf&quot;);
+
+    }
+}
+</code></pre><p>代码主要参考：<a href="https://www.cnblogs.com/xxyfhjl/p/6773786.html" target="_blank" rel="noopener">https://www.cnblogs.com/xxyfhjl/p/6773786.html</a></p>
+
       
     </div>
     
@@ -515,12 +611,12 @@ public class TestMap {
   <!-- JS库 sweetalert 可修改路径 -->
   <script src="https://cdn.bootcss.com/jquery/2.0.0/jquery.min.js"></script>
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-  <p><span>本文标题:</span><a href="/2018/11/08/for-map/">遍历Map的四种方法</a></p>
+  <p><span>本文标题:</span><a href="/2018/11/15/文件转换/">word、excel、ppt转PDF文件</a></p>
   <p><span>文章作者:</span><a href="/" title="访问 驴哥 的个人博客">驴哥</a></p>
-  <p><span>发布时间:</span>2018年11月08日 - 21:11</p>
-  <p><span>最后更新:</span>2018年11月12日 - 21:11</p>
-  <p><span>原始链接:</span><a href="/2018/11/08/for-map/" title="遍历Map的四种方法">https://lvgeaibingyue.com/2018/11/08/for-map/</a>
-    <span class="copy-path"  title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="https://lvgeaibingyue.com/2018/11/08/for-map/"  aria-label="复制成功！"></i></span>
+  <p><span>发布时间:</span>2018年11月15日 - 20:11</p>
+  <p><span>最后更新:</span>2018年11月15日 - 20:11</p>
+  <p><span>原始链接:</span><a href="/2018/11/15/文件转换/" title="word、excel、ppt转PDF文件">https://lvgeaibingyue.com/2018/11/15/文件转换/</a>
+    <span class="copy-path"  title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="https://lvgeaibingyue.com/2018/11/15/文件转换/"  aria-label="复制成功！"></i></span>
   </p>
   <p><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">署名-非商业性使用-禁止演绎 4.0 国际</a> 转载请保留原文链接及作者。</p>  
 </div>
@@ -580,7 +676,7 @@ public class TestMap {
       
         <div class="post-tags">
           
-            <a href="/tags/Map遍历/" rel="tag"><i class="fa fa-tag"></i> Map遍历</a>
+            <a href="/tags/文件转换/" rel="tag"><i class="fa fa-tag"></i> 文件转换</a>
           
         </div>
       
@@ -593,8 +689,8 @@ public class TestMap {
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/11/07/base64/" rel="next" title="base64和图片的互相转换">
-                <i class="fa fa-chevron-left"></i> base64和图片的互相转换
+              <a href="/2018/11/14/win10专业版激活办法/" rel="next" title="win10专业版激活办法">
+                <i class="fa fa-chevron-left"></i> win10专业版激活办法
               </a>
             
           </div>
@@ -602,10 +698,6 @@ public class TestMap {
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/11/08/Mybatis-EntryWrapper/" rel="prev" title="mybatis-plus 条件包装类使用工具  EntityWrapper">
-                mybatis-plus 条件包装类使用工具  EntityWrapper <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -700,8 +792,17 @@ public class TestMap {
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -793,6 +894,22 @@ public class TestMap {
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#今天项目要求做个word、excel转pdf的功能，百般搜刮，测试，终于完成"><span class="nav-number">1.</span> <span class="nav-text">今天项目要求做个word、excel转pdf的功能，百般搜刮，测试，终于完成</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#下面这个是word、excel、ppt转pdf功能，支持doc、docx、xls、xlsx、ppt、pptx转pdf"><span class="nav-number">1.0.1.</span> <span class="nav-text">下面这个是word、excel、ppt转pdf功能，支持doc、docx、xls、xlsx、ppt、pptx转pdf</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1、-准备工作：windows环境、maven项目，普通项目也可以"><span class="nav-number">1.0.1.1.</span> <span class="nav-text">1、 准备工作：windows环境、maven项目，普通项目也可以</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2、-点击-download-就行，下载解压后显示的是-jacob-1-19文件-这个样子"><span class="nav-number">1.0.1.2.</span> <span class="nav-text">2、 点击  download  就行，下载解压后显示的是  jacob-1.19文件   这个样子</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3、-64位系统就用-x64的dll，32位系统就用x86的dll。将dll文件放入放入jdk-bin目录下-如下图所示："><span class="nav-number">1.0.1.3.</span> <span class="nav-text">3、 64位系统就用 x64的dll，32位系统就用x86的dll。将dll文件放入放入jdk/bin目录下,如下图所示：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4、-将压缩包中的jacob-jar引入项目"><span class="nav-number">1.0.1.4.</span> <span class="nav-text">4、 将压缩包中的jacob.jar引入项目</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5、-展示代码"><span class="nav-number">1.0.1.5.</span> <span class="nav-text">5、 展示代码</span></a></li></ol></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       

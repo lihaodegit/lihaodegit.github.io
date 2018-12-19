@@ -115,7 +115,7 @@
 <meta property="og:image" content="https://i.imgur.com/Xk6iQhS.png">
 <meta property="og:image" content="https://i.imgur.com/AslwEBJ.png">
 <meta property="og:image" content="https://i.imgur.com/Mz4BHh0.png">
-<meta property="og:updated_time" content="2018-12-19T06:24:58.907Z">
+<meta property="og:updated_time" content="2018-12-19T06:28:37.593Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="word、excel、ppt转PDF文件">
 <meta name="twitter:description" content="今天项目要求做个word、excel转pdf的功能，百般搜刮，测试，终于完成下面这个是word、excel、ppt转pdf功能，支持doc、docx、xls、xlsx、ppt、pptx转pdf1、 准备工作：windows环境、maven项目，普通项目也可以下载jacob.zip，地址：https://sourceforge.net/projects/jacob-project/">
@@ -416,7 +416,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  717
+                  741
                 </span>
               
 
@@ -432,7 +432,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  3
+                  4
                 </span>
               
             </div>
@@ -457,8 +457,14 @@
 <p><img src="https://i.imgur.com/lO6d566.png" alt=""><br><a id="more"></a></p>
 <h4 id="2、-点击-download-就行，下载解压后显示的是-jacob-1-19文件-这个样子"><a href="#2、-点击-download-就行，下载解压后显示的是-jacob-1-19文件-这个样子" class="headerlink" title="2、 点击  download  就行，下载解压后显示的是  jacob-1.19文件   这个样子"></a>2、 点击  download  就行，下载解压后显示的是  jacob-1.19文件   这个样子</h4><p><img src="https://i.imgur.com/Xk6iQhS.png" alt=""></p>
 <h4 id="3、-64位系统就用-x64的dll，32位系统就用x86的dll。将dll文件放入放入jdk-bin目录下-如下图所示："><a href="#3、-64位系统就用-x64的dll，32位系统就用x86的dll。将dll文件放入放入jdk-bin目录下-如下图所示：" class="headerlink" title="3、 64位系统就用 x64的dll，32位系统就用x86的dll。将dll文件放入放入jdk/bin目录下,如下图所示："></a>3、 64位系统就用 x64的dll，32位系统就用x86的dll。将dll文件放入放入jdk/bin目录下,如下图所示：</h4><p><img src="https://i.imgur.com/AslwEBJ.png" alt=""></p>
-<h4 id="4、-将压缩包中的jacob-jar引入项目"><a href="#4、-将压缩包中的jacob-jar引入项目" class="headerlink" title="4、 将压缩包中的jacob.jar引入项目"></a>4、 将压缩包中的jacob.jar引入项目</h4><p><img src="https://i.imgur.com/Mz4BHh0.png" alt=""><br>        <dependency><br>             <groupid>com.google.guava</groupid><br>             <artifactid>guava</artifactid><br>             <version>19.0</version><br>        </dependency></p>
+<h4 id="4、-将压缩包中的jacob-jar引入项目"><a href="#4、-将压缩包中的jacob-jar引入项目" class="headerlink" title="4、 将压缩包中的jacob.jar引入项目"></a>4、 将压缩包中的jacob.jar引入项目</h4><p><img src="https://i.imgur.com/Mz4BHh0.png" alt=""></p>
 <pre><code>&lt;dependency&gt;
+     &lt;groupId&gt;com.google.guava&lt;/groupId&gt;
+     &lt;artifactId&gt;guava&lt;/artifactId&gt;
+     &lt;version&gt;19.0&lt;/version&gt;
+&lt;/dependency&gt;
+
+&lt;dependency&gt;
     &lt;groupId&gt;com.jacob&lt;/groupId&gt;
     &lt;artifactId&gt;jacob&lt;/artifactId&gt;
     &lt;version&gt;1.18-M2&lt;/version&gt;

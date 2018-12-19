@@ -322,6 +322,229 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://lvgeaibingyue.com/2018/12/19/IO-1/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="驴哥">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/1.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="驴哥爱冰月的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/12/19/IO-1/" itemprop="url">IO流（一）</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-12-19T14:15:46+08:00">
+                2018-12-19
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/java/" itemprop="url" rel="index">
+                    <span itemprop="name">java</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  2.2k
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  8
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h1 id="IO流的分类"><a href="#IO流的分类" class="headerlink" title="IO流的分类"></a>IO流的分类</h1><ol>
+<li><p>按照操作的对象不同可分为字节流与字符流</p>
+</li>
+<li><p>按照流的方向不同可分为输入（指从外部存储设备拿文件到内存）流也叫读与输出（指从内存把文件写入到外部存储设备）流也叫写</p>
+</li>
+<li><p><strong>注：字节流可以操作任何类型的文件，字符流是后来才出现的，主要用来操作字符类的文件；字符流的出现源于编码表的问题，一开始计算机内使用ANSII编码，后来每种语言都有了自己的编码方式即编码表，为了统一这些编码信息国际标准化组织便产生了Unicode编码信息表来把世界各国的语言都包括在内，此编码表采用两个字节即16位来存储每一个字符，java内置的编码表便是Unicode编码；字符流是当读取文件的时候，以字节的形式读取后，查询编码表看具体使用哪种编码方式，查到以后再进行文件的输出，所以字符流是字节流+查编码表的封装形式。</strong></p>
+</li>
+</ol>
+<h1 id="流的顶层基类"><a href="#流的顶层基类" class="headerlink" title="流的顶层基类"></a>流的顶层基类</h1><p>所有流的操作无非两种形式：读与写；所以Java便所这两种操作形式抽取出了字节流与字符流的两种顶层的基类</p>
+<p>字节流的顶层基类：<strong>InputStream</strong>与<strong>OutputStream</strong></p>
+<p>字符流的顶层基类：<strong>Read</strong>与<strong>Write</strong></p>
+<hr>
+<h1 id="代码部分"><a href="#代码部分" class="headerlink" title="代码部分"></a>代码部分</h1><pre><code>import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.LineNumberReader;
+
+public class FileTest {
+
+public static void main(String[] args) {
+    try {
+        function_demo7();
+    } catch (IOException e) {
+        // TODO 自动生成的 catch 块
+        e.printStackTrace();
+    }
+}
+/**
+ * 字符流FileWite
+ */
+public static void function_demo1() throws IOException {
+             // 创建字符写入流对象，接收一个要写入的文件路径对象，此文件若不存在则新创建一个文件，若已存在则覆盖的文件
+             FileWriter fw = new FileWriter(&quot;C:\\Users\\lihao\\Desktop\\file\\demo1.txt&quot;);
+             fw.write(&quot;abcdefg&quot;);// 把内容写入缓冲区
+             fw.flush();// 从缓冲区把内容刷入文件中
+             fw.close();// 关闭流
+             //注：以上代码中fw.flush()是把内容从缓冲区刷入到文件中去，
+             //但是fw.close()方法是先把内容从缓冲区刷入到文件中去即先调用flush方法，所以fw.flush()可以不用
+         }
+</code></pre>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/12/19/IO-1/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+	<div>
+		
+	</div>
+	<div>
+      
+	</div>
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://lvgeaibingyue.com/2018/12/11/input-zTree/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1886,7 +2109,7 @@ public static void main(String[] args) throws Exception {
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">8</span>
+                  <span class="site-state-item-count">9</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -1908,7 +2131,7 @@ public static void main(String[] args) throws Exception {
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">8</span>
+                  <span class="site-state-item-count">9</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -1994,7 +2217,7 @@ public static void main(String[] args) throws Exception {
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">5.4k</span>
+    <span title="Site words total count">7.6k</span>
   
 </div>
 

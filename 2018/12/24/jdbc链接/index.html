@@ -92,7 +92,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="JDBC," />
 
 
 
@@ -103,16 +103,18 @@
 
 
 
-<meta name="description" content="赚卖白菜的钱，操卖白粉的心">
-<meta property="og:type" content="website">
-<meta property="og:title" content="驴哥爱冰月的博客">
-<meta property="og:url" content="https://lvgeaibingyue.com/categories/数据清洗/index.html">
+<meta name="description" content="记一次修炼路上的JDBC链接数据库的案例import java.sql.*; static Connection conn = null; static PreparedStatement ps = null; static ResultSet rs = null; static {     try {         Class.forName(&amp;quot;oracle.jdbc.driver.">
+<meta name="keywords" content="JDBC">
+<meta property="og:type" content="article">
+<meta property="og:title" content="JDBC连接数据库的案例">
+<meta property="og:url" content="https://lvgeaibingyue.com/2018/12/24/jdbc链接/index.html">
 <meta property="og:site_name" content="驴哥爱冰月的博客">
-<meta property="og:description" content="赚卖白菜的钱，操卖白粉的心">
+<meta property="og:description" content="记一次修炼路上的JDBC链接数据库的案例import java.sql.*; static Connection conn = null; static PreparedStatement ps = null; static ResultSet rs = null; static {     try {         Class.forName(&amp;quot;oracle.jdbc.driver.">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-12-24T03:17:31.641Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="驴哥爱冰月的博客">
-<meta name="twitter:description" content="赚卖白菜的钱，操卖白粉的心">
+<meta name="twitter:title" content="JDBC连接数据库的案例">
+<meta name="twitter:description" content="记一次修炼路上的JDBC链接数据库的案例import java.sql.*; static Connection conn = null; static PreparedStatement ps = null; static ResultSet rs = null; static {     try {         Class.forName(&amp;quot;oracle.jdbc.driver.">
 
 
 
@@ -142,13 +144,13 @@
 
 
 
-  <link rel="canonical" href="https://lvgeaibingyue.com/categories/数据清洗/"/>
+  <link rel="canonical" href="https://lvgeaibingyue.com/2018/12/24/jdbc链接/"/>
 
 
 
 
 
-  <title>分类: 数据清洗 | 驴哥爱冰月的博客</title>
+  <title>JDBC连接数据库的案例 | 驴哥爱冰月的博客</title>
   
 
 
@@ -167,7 +169,7 @@
     
   
 
-  <div class="container sidebar-position-left ">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 	<a href="https://lihaodegit.github.io">
 		<img style="position: absolute; top: 0; left: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_left_darkblue_121621.png" alt="Fork me on GitHub">
@@ -307,55 +309,369 @@
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block category">
+  <div id="posts" class="posts-expand">
+    
 
-    <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        <h1>数据清洗<small>分类</small>
-        </h1>
-      </div>
+  
 
-      
-        
+  
+  
+  
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://lvgeaibingyue.com/2018/12/24/jdbc链接/">
 
-      <h2 class="post-title">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="驴哥">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/1.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="驴哥爱冰月的博客">
+    </span>
+
+    
+      <header class="post-header">
+
         
-            <a class="post-title-link" href="/2018/11/28/kettle-1/" itemprop="url">
-              
-                <span itemprop="name">数据清洗工具kettle的下载与简单的使用</span>
-              
-            </a>
         
-      </h2>
+          <h1 class="post-title" itemprop="name headline">JDBC连接数据库的案例</h1>
+        
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-11-28T14:23:41+08:00"
-              content="2018-11-28" >
-          11-28
-        </time>
-      </div>
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-12-24T11:13:50+08:00">
+                2018-12-24
+              </time>
+            
 
-    </header>
-  </article>
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/java/" itemprop="url" rel="index">
+                    <span itemprop="name">java</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-file-o"></i>本站总阅读量
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>次
+            </span>
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  363
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  1
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="记一次修炼路上的JDBC链接数据库的案例"><a href="#记一次修炼路上的JDBC链接数据库的案例" class="headerlink" title="记一次修炼路上的JDBC链接数据库的案例"></a>记一次修炼路上的JDBC链接数据库的案例</h1><pre><code>import java.sql.*;
+static Connection conn = null;
+static PreparedStatement ps = null;
+static ResultSet rs = null;
+static {
+    try {
+        Class.forName(&quot;oracle.jdbc.driver.OracleDriver&quot;);
+    } catch (ClassNotFoundException e) {
+        e.printStackTrace();
+    }
+}
+ List&lt;GaResField&gt; fieldList = (List&lt;GaResField&gt;) map.get(&quot;fieldList&quot;);
+    String columns = &quot;&quot;;//得到所有的查询列
+    for (int i = 0; i &lt; fieldList.size(); i++) {
+        GaResField gaResField = fieldList.get(i);
+        columns += gaResField.getStname();
+        if (i != fieldList.size() - 1) {
+            columns += &quot;,&quot;;//到最后一个就不加“，”
+        }
+    }
+</code></pre><a id="more"></a>    
+<pre><code>List&lt;Map&gt; list = null;
+try {
+        list = new ArrayList&lt;&gt;();
+        conn = DriverManager.getConnection(url, username, password);
+        String sql = &quot;SELECT * from (SELECT a.*,ROWNUM rn FROM (select &quot; + columns + &quot; from &quot; + tableName + &quot;) a where ROWNUM &lt;= 10) where rn &gt;= 0&quot;;
+        System.out.println(&quot;sql=&quot; + sql);//输出一下sql
+        ps = conn.prepareStatement(sql);
+        rs = ps.executeQuery();//得到结果集（rs必定不是空值）
+        //如果想判断结果集不为空的话就【if(rs.next())】，注意这里rs.next()已经取出第一条数据判断了，下面的while（）循环中的rs.next()取出来的数据是第二条
+            ResultSetMetaData rsd = rs.getMetaData();//得到数据集的结构，可以取出字段数，字段名，表名。。。
+            while (rs.next()) {//rs.next();是得到第一条数据
+                Map&lt;String, String&gt; map1 = new HashMap&lt;&gt;();
+                for (int i = 0; i &lt; rsd.getColumnCount(); i++) {
+                    String key = rsd.getColumnName(i + 1);//取出字段名
+                    String value = rs.getString(i + 1);//取出对应的值
+                    map1.put(key, value);
+                }
+                list.add(map1);
+            }
+            return list;
+    } catch (Exception e) {
+        e.printStackTrace();
+    }finally {//一定要关闭数据库链接，不然很浪费资源
+        if (rs !=null) {
+            rs.close();
+        }
+        if (ps != null) {
+            ps.close();
+        }
+        if (conn !=null) {
+            conn.close();
+        }
+    }
+</code></pre>
+      
+    </div>
+    
+    
+    
+	<div>
+		
+			<div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">-------------本文结束<i class="fa fa-paw"></i>感谢您的阅读-------------</div>
+    
+</div>
+
+		
+	</div>
+	<div>
+      
+        
+<div class="my_post_copyright">
+  <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
+
+  <!-- JS库 sweetalert 可修改路径 -->
+  <script src="https://cdn.bootcss.com/jquery/2.0.0/jquery.min.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <p><span>本文标题:</span><a href="/2018/12/24/jdbc链接/">JDBC连接数据库的案例</a></p>
+  <p><span>文章作者:</span><a href="/" title="访问 驴哥 的个人博客">驴哥</a></p>
+  <p><span>发布时间:</span>2018年12月24日 - 11:12</p>
+  <p><span>最后更新:</span>2018年12月24日 - 11:12</p>
+  <p><span>原始链接:</span><a href="/2018/12/24/jdbc链接/" title="JDBC连接数据库的案例">https://lvgeaibingyue.com/2018/12/24/jdbc链接/</a>
+    <span class="copy-path"  title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="https://lvgeaibingyue.com/2018/12/24/jdbc链接/"  aria-label="复制成功！"></i></span>
+  </p>
+  <p><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">署名-非商业性使用-禁止演绎 4.0 国际</a> 转载请保留原文链接及作者。</p>  
+</div>
+<script> 
+    var clipboard = new Clipboard('.fa-clipboard');
+      $(".fa-clipboard").click(function(){
+      clipboard.on('success', function(){
+        swal({   
+          title: "",   
+          text: '复制成功',
+          icon: "success", 
+          showConfirmButton: true
+          });
+        });
+    });  
+</script>
 
 
       
-    </div>
+	</div>
+    
 
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>坚持原创技术分享，您的支持将鼓励我继续创作</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/wx.png" alt="驴哥 微信支付"/>
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/images/zfb.png" alt="驴哥 支付宝"/>
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/JDBC/" rel="tag"><i class="fa fa-tag"></i> JDBC</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/12/19/IO-1/" rel="next" title="IO流（一）">
+                <i class="fa fa-chevron-left"></i> IO流（一）
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
 
+
+    <div class="post-spread">
+      
+        
+  <div class="bdsharebuttonbox">
+    <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+    <a href="#" class="bds_douban" data-cmd="douban" title="分享到豆瓣网"></a>
+    <a href="#" class="bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a>
+    <a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+    <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+    <a href="#" class="bds_tieba" data-cmd="tieba" title="分享到百度贴吧"></a>
+    <a href="#" class="bds_twi" data-cmd="twi" title="分享到Twitter"></a>
+    <a href="#" class="bds_fbook" data-cmd="fbook" title="分享到Facebook"></a>
+    <a href="#" class="bds_more" data-cmd="more"></a>
+    <a class="bds_count" data-cmd="count"></a>
+  </div>
+  <script>
+    window._bd_share_config = {
+      "common": {
+        "bdText": "",
+        "bdMini": "2",
+        "bdMiniList": false,
+        "bdPic": ""
+      },
+      "share": {
+        "bdSize": "16",
+        "bdStyle": "0"
+      },
+      "image": {
+        "viewList": ["tsina", "douban", "sqq", "qzone", "weixin", "twi", "fbook"],
+        "viewText": "分享到：",
+        "viewSize": "16"
+      }
+    }
+  </script>
+
+<script>
+  with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='//bdimg.share.baidu.com/static/api/js/share.js?cdnversion='+~(-new Date()/36e5)];
+</script>
+
+      
+    </div>
+  </div>
 
 
           </div>
@@ -363,6 +679,15 @@
 
 
           
+
+  
+    <div class="comments" id="comments">
+      <div id="lv-container" data-id="city" data-uid="MTAyMC80MDkxOS8xNzQ0NA=="></div>
+    </div>
+
+  
+
+
 
         </div>
         
@@ -383,8 +708,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -482,6 +816,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#记一次修炼路上的JDBC链接数据库的案例"><span class="nav-number">1.</span> <span class="nav-text">记一次修炼路上的JDBC链接数据库的案例</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -642,6 +992,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
@@ -670,6 +1024,17 @@
 
 
 
+  
+    <script type="text/javascript">
+      (function(d, s) {
+        var j, e = d.getElementsByTagName(s)[0];
+        if (typeof LivereTower === 'function') { return; }
+        j = d.createElement(s);
+        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        j.async = true;
+        e.parentNode.insertBefore(j, e);
+      })(document, 'script');
+    </script>
   
 
 

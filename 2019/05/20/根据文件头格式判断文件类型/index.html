@@ -111,7 +111,7 @@
 <meta property="og:site_name" content="驴哥爱冰月的博客">
 <meta property="og:description" content="遇到的问题：一般情况下，我们判断上传文件格式就是判断文件的后缀名，但是正常的文件可以这样判断，假如一个文件是.txt格式的，有人故意把这个文件改为.mp4格式，这种情况下，你只判断后缀名就不行了。于是就有了判断文件头格式的方法。       解决办法：import java.io.File; import java.io.FileInputStream; import java.io.FileNo">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-05-20T10:17:03.322Z">
+<meta property="og:updated_time" content="2019-05-20T10:20:41.074Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="根据文件头格式判断文件类型">
 <meta name="twitter:description" content="遇到的问题：一般情况下，我们判断上传文件格式就是判断文件的后缀名，但是正常的文件可以这样判断，假如一个文件是.txt格式的，有人故意把这个文件改为.mp4格式，这种情况下，你只判断后缀名就不行了。于是就有了判断文件头格式的方法。       解决办法：import java.io.File; import java.io.FileInputStream; import java.io.FileNo">
@@ -470,8 +470,8 @@ static{
  public static void main(String[] args) {
     FileTypeUtil.getFileType();
 }
-
-private static void getAllFileType(){  
+</code></pre><a id="more"></a>         
+<pre><code>private static void getAllFileType(){  
     FILE_TYPE_MAP.put(&quot;ffd8ffe000104a464946&quot;, &quot;jpg&quot;); //JPEG (jpg)     
     FILE_TYPE_MAP.put(&quot;89504e470d0a1a0a0000&quot;, &quot;png&quot;); //PNG (png)     
     FILE_TYPE_MAP.put(&quot;47494638396126026f01&quot;, &quot;gif&quot;); //GIF (gif)     

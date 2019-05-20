@@ -445,8 +445,7 @@
 
       
         
-          
-            <h2 id="遇到的问题："><a href="#遇到的问题：" class="headerlink" title="遇到的问题："></a>遇到的问题：</h2><p>一般情况下，我们判断上传文件格式就是判断文件的后缀名，但是正常的文件可以这样判断，假如一个文件是.txt格式的，有人故意把这个文件改为.mp4格式，这种情况下，你只判断后缀名就不行了。于是就有了判断文件头格式的方法。      </p>
+          <h2 id="遇到的问题："><a href="#遇到的问题：" class="headerlink" title="遇到的问题："></a>遇到的问题：</h2><p>一般情况下，我们判断上传文件格式就是判断文件的后缀名，但是正常的文件可以这样判断，假如一个文件是.txt格式的，有人故意把这个文件改为.mp4格式，这种情况下，你只判断后缀名就不行了。于是就有了判断文件头格式的方法。      </p>
 <h2 id="解决办法："><a href="#解决办法：" class="headerlink" title="解决办法："></a>解决办法：</h2><pre><code>import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -468,128 +467,14 @@ static{
  public static void main(String[] args) {
     FileTypeUtil.getFileType();
 }
-
-private static void getAllFileType(){  
-    FILE_TYPE_MAP.put(&quot;ffd8ffe000104a464946&quot;, &quot;jpg&quot;); //JPEG (jpg)     
-    FILE_TYPE_MAP.put(&quot;89504e470d0a1a0a0000&quot;, &quot;png&quot;); //PNG (png)     
-    FILE_TYPE_MAP.put(&quot;47494638396126026f01&quot;, &quot;gif&quot;); //GIF (gif)     
-    FILE_TYPE_MAP.put(&quot;49492a00227105008037&quot;, &quot;tif&quot;); //TIFF (tif)     
-    FILE_TYPE_MAP.put(&quot;424d228c010000000000&quot;, &quot;bmp&quot;); //16色位图(bmp)     
-    FILE_TYPE_MAP.put(&quot;424d8240090000000000&quot;, &quot;bmp&quot;); //24位位图(bmp)     
-    FILE_TYPE_MAP.put(&quot;424d8e1b030000000000&quot;, &quot;bmp&quot;); //256色位图(bmp)     
-    FILE_TYPE_MAP.put(&quot;41433130313500000000&quot;, &quot;dwg&quot;); //CAD (dwg)     
-    FILE_TYPE_MAP.put(&quot;3c21444f435459504520&quot;, &quot;html&quot;); //HTML (html)
-    FILE_TYPE_MAP.put(&quot;3c21646f637479706520&quot;, &quot;htm&quot;); //HTM (htm)
-    FILE_TYPE_MAP.put(&quot;48544d4c207b0d0a0942&quot;, &quot;css&quot;); //css
-    FILE_TYPE_MAP.put(&quot;696b2e71623d696b2e71&quot;, &quot;js&quot;); //js
-    FILE_TYPE_MAP.put(&quot;7b5c727466315c616e73&quot;, &quot;rtf&quot;); //Rich Text Format (rtf)     
-    FILE_TYPE_MAP.put(&quot;38425053000100000000&quot;, &quot;psd&quot;); //Photoshop (psd)     
-    FILE_TYPE_MAP.put(&quot;46726f6d3a203d3f6762&quot;, &quot;eml&quot;); //Email [Outlook Express 6] (eml)       
-    FILE_TYPE_MAP.put(&quot;d0cf11e0a1b11ae10000&quot;, &quot;doc&quot;); //MS Excel 注意：word、msi 和 excel的文件头一样     
-    FILE_TYPE_MAP.put(&quot;d0cf11e0a1b11ae10000&quot;, &quot;vsd&quot;); //Visio 绘图     
-    FILE_TYPE_MAP.put(&quot;5374616E64617264204A&quot;, &quot;mdb&quot;); //MS Access (mdb)      
-    FILE_TYPE_MAP.put(&quot;252150532D41646F6265&quot;, &quot;ps&quot;);     
-    FILE_TYPE_MAP.put(&quot;255044462d312e360d25&quot;, &quot;pdf&quot;); //Adobe Acrobat (pdf)   
-    FILE_TYPE_MAP.put(&quot;2e524d46000000120001&quot;, &quot;rmvb&quot;); //rmvb/rm相同  
-    FILE_TYPE_MAP.put(&quot;464c5601050000000900&quot;, &quot;flv&quot;); //flv与f4v相同  
-    FILE_TYPE_MAP.put(&quot;00000020667479706973&quot;, &quot;mp4&quot;); 
-    FILE_TYPE_MAP.put(&quot;49443303000000000f76&quot;, &quot;mp3&quot;); 
-    FILE_TYPE_MAP.put(&quot;000001ba210001000180&quot;, &quot;mpg&quot;); //     
-    FILE_TYPE_MAP.put(&quot;3026b2758e66cf11a6d9&quot;, &quot;wmv&quot;); //wmv与asf相同    
-    FILE_TYPE_MAP.put(&quot;524946464694c9015741&quot;, &quot;wav&quot;); //Wave (wav)  
-    FILE_TYPE_MAP.put(&quot;52494646d07d60074156&quot;, &quot;avi&quot;);  
-    FILE_TYPE_MAP.put(&quot;4d546864000000060001&quot;, &quot;mid&quot;); //MIDI (mid)   
-    FILE_TYPE_MAP.put(&quot;504b0304140000000800&quot;, &quot;zip&quot;);    
-    FILE_TYPE_MAP.put(&quot;526172211a0700cf9073&quot;, &quot;rar&quot;);   
-    FILE_TYPE_MAP.put(&quot;235468697320636f6e66&quot;, &quot;ini&quot;);   
-    FILE_TYPE_MAP.put(&quot;504b03040a0000000000&quot;, &quot;jar&quot;); 
-    FILE_TYPE_MAP.put(&quot;4d5a9000030000000400&quot;, &quot;exe&quot;);//可执行文件
-    FILE_TYPE_MAP.put(&quot;3c25402070616765206c&quot;, &quot;jsp&quot;);//jsp文件
-    FILE_TYPE_MAP.put(&quot;4d616e69666573742d56&quot;, &quot;mf&quot;);//MF文件
-    FILE_TYPE_MAP.put(&quot;3c3f786d6c2076657273&quot;, &quot;xml&quot;);//xml文件
-    FILE_TYPE_MAP.put(&quot;efbbbf2f2a0d0a53514c&quot;, &quot;sql&quot;);//xml文件
-    FILE_TYPE_MAP.put(&quot;7061636b616765207765&quot;, &quot;java&quot;);//java文件
-    FILE_TYPE_MAP.put(&quot;406563686f206f66660d&quot;, &quot;bat&quot;);//bat文件
-    FILE_TYPE_MAP.put(&quot;1f8b0800000000000000&quot;, &quot;gz&quot;);//gz文件
-    FILE_TYPE_MAP.put(&quot;6c6f67346a2e726f6f74&quot;, &quot;properties&quot;);//bat文件
-    FILE_TYPE_MAP.put(&quot;cafebabe0000002e0041&quot;, &quot;class&quot;);//bat文件
-    FILE_TYPE_MAP.put(&quot;49545346030000006000&quot;, &quot;chm&quot;);//bat文件
-    FILE_TYPE_MAP.put(&quot;04000000010000001300&quot;, &quot;mxp&quot;);//bat文件
-    FILE_TYPE_MAP.put(&quot;504b0304140006000800&quot;, &quot;docx&quot;);//docx文件
-    FILE_TYPE_MAP.put(&quot;d0cf11e0a1b11ae10000&quot;, &quot;wps&quot;);//WPS文字wps、表格et、演示dps都是一样的
-    FILE_TYPE_MAP.put(&quot;6431303a637265617465&quot;, &quot;torrent&quot;);
-    FILE_TYPE_MAP.put(&quot;494d4b48010100000200&quot;, &quot;264&quot;);
-    FILE_TYPE_MAP.put(&quot;6D6F6F76&quot;, &quot;mov&quot;); //Quicktime (mov)  
-    FILE_TYPE_MAP.put(&quot;FF575043&quot;, &quot;wpd&quot;); //WordPerfect (wpd)   
-    FILE_TYPE_MAP.put(&quot;CFAD12FEC5FD746F&quot;, &quot;dbx&quot;); //Outlook Express (dbx)     
-    FILE_TYPE_MAP.put(&quot;2142444E&quot;, &quot;pst&quot;); //Outlook (pst)      
-    FILE_TYPE_MAP.put(&quot;AC9EBD8F&quot;, &quot;qdf&quot;); //Quicken (qdf)     
-    FILE_TYPE_MAP.put(&quot;E3828596&quot;, &quot;pwl&quot;); //Windows Password (pwl)         
-    FILE_TYPE_MAP.put(&quot;2E7261FD&quot;, &quot;ram&quot;); //Real Audio (ram) 
-}  
-
-/**  
- * 得到上传文件的文件头  
- * @param src  
- * @return  
- */    
-private static String bytesToHexString(byte[] src){    
-    StringBuilder stringBuilder = new StringBuilder();    
-    if(null==src || src.length &lt;= 0){    
-        return null;    
-    }  
-    for(int i = 0; i &lt; src.length; i++){    
-        int v = src[i] &amp; 0xFF;    
-        String hv = Integer.toHexString(v);    
-        if(hv.length() &lt; 2){    
-            stringBuilder.append(0);    
-        }    
-        stringBuilder.append(hv);    
-    }    
-    return stringBuilder.toString();  
-}    
-
-/** 
- * 获取文件类型 
- * @param file 
- * @return 
- */  
-public static String getFileType(){  
-    String res = null;
-    FileInputStream fis = null;
-    try{  
-        fis = new FileInputStream(&quot;C:\\Users\\lihao\\Desktop\\111.mp4&quot;);
-        //获取文件头的前六位
-        byte[] b = new byte[5];  
-        fis.read(b, 0, b.length);  
-        String fileCode = bytesToHexString(b); 
-        Iterator&lt;String&gt; keyIter = FILE_TYPE_MAP.keySet().iterator();  
-        while(keyIter.hasNext()){  
-            String key = keyIter.next();        
-             //比较前几位是否相同就可以判断文件格式（相同格式文件文件头后面几位会有所变化）
-            if(key.toLowerCase().startsWith(fileCode.toLowerCase()) || fileCode.toLowerCase().startsWith(key.toLowerCase())){  
-                res = FILE_TYPE_MAP.get(key);  
-                break;  
-            }  
-        }
-        System.out.println(&quot;文件头:&quot;+fileCode+&quot;-----文件类型:&quot;+res);
-        fis.close();
-    }catch(FileNotFoundException e){
-        e.printStackTrace();    
-    }catch (IOException e){  
-        e.printStackTrace();    
-    }finally {
-        try {
-            fis.close();
-        }catch (IOException e) {
-            e.printStackTrace();
-        }
-    }    
-    return res;  
-}
-</code></pre><p>}</p>
-
-          
+</code></pre>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/05/20/根据文件头格式判断文件类型/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>

@@ -111,7 +111,7 @@
 <meta property="og:site_name" content="驴哥爱冰月的博客">
 <meta property="og:description" content="oralce查询表中的字段、长度、注释、类型select  COL.table_name,COL.COLUMN_NAME,COL.COMMENTS,TAB.data_type,TAB.data_length  from user_col_comments col,USER_TAB_COLUMNS tab  where 1=1 and COL.column_name = tab.column_nam">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-07-19T06:53:47.350Z">
+<meta property="og:updated_time" content="2019-07-19T06:59:44.313Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="oracle常用的小sql">
 <meta name="twitter:description" content="oralce查询表中的字段、长度、注释、类型select  COL.table_name,COL.COLUMN_NAME,COL.COMMENTS,TAB.data_type,TAB.data_length  from user_col_comments col,USER_TAB_COLUMNS tab  where 1=1 and COL.column_name = tab.column_nam">
@@ -469,7 +469,8 @@ SELECT FILE_NAME,TABLESPACE_NAME,AUTOEXTENSIBLE FROM dba_data_files;
 
  --设置表空间自增长
 ALTER DATABASE DATAFILE &apos;D:\ORACLEDATA\GXZHJG_DATA.DBF&apos; AUTOEXTEND ON;
-</code></pre><h3 id="insrt和like"><a href="#insrt和like" class="headerlink" title="insrt和like"></a>insrt和like</h3><pre><code>/*  
+</code></pre><a id="more"></a>
+<h3 id="insrt和like"><a href="#insrt和like" class="headerlink" title="insrt和like"></a>insrt和like</h3><pre><code>/*  
  * 返回子字符串在源字符串中的位置(字符串位置从1开始，而不是从0开始)  
  * @param str 源字符串  
  * @param substr 子字符串  
